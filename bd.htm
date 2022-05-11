@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+
+	<header>
+		<h1 style="background-color:grey;text-align: center; font-family: cursive; color:rgb(124,252,0); font-size:70px; font-style: bold;">Page for blood donation</h1>
+	</header>
+
+	<body>	
+  <div class="topnav",>
+  <a href="#home">Home</a>
+  <a href="#blood donations">Blood Donations</a>
+  <a href="#Institutions">Institutions</a>
+  <a href="#Achievements">Achievements</a>
+  <a href="#Contact US">Contact Us</a>
+</div>
+</body>
+<body>
+
+<!--Code for background image of red cross-->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image:url("E:/project/bd.png");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">We are The Red Cross</h1>
+    <h3>Please Donate</h3>
+    <button>Donate</button>
+  </div>
+</div>
+
+<header>
+
+<!-- Code for the background  image ends here-->
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<!-- Next and previous buttons -->
+
+
+<!--This is the code for slideshow with buttons-->
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="the-time-to-give-is-now.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="image1.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+ 
+
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides(n) {
+
+
+//copied  code
+
+var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  
+
+//copied code ends above
+
+
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+
+</header>
+</body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--This is the accordion-->
+
+<button class="accordion">Health Conditions</button>
+<div class="panel">
+  <p style="color: black;font-family:fantasy;text-align: left;">Whole blood donations</p>
+  
+  	<p>	<ul>
+  			<li>You must be in good health and feeling well</li>
+  			<li>You must weigh at least 110 lbs</li>
+  			<li>You must be in good health and feeling well</li>
+  			<li>You must be more than 16 years old</li>
+  		</ul>
+  	</p>
+  
+  <p style="color: black;font-family:fantasy;text-align: left;">Power Red Donation</p>
+  		
+  		<p><ul>
+  			<li>Donation Frequency:Every 112 day, upto 3 times/year</li>
+  			<li>You must be in good health and feeling well</li>
+  			<li>Male donors must be more than 16 years old in most states, at least 5'1" tall and weigh at least 130 lbs</li>
+  			<li>Female donors must be at least 19 years old, at least 5'5" tall and weigh at least 150 lbs</li>
+  		</ul>
+  	</p>
+  
+</div>
+<body>
+<button class="accordion">Personal Approval</button>
+<div class="panel">
+  <p>You must approve to the following conditions </p>
+  	<ol>
+  		<li>That you are doing this with your approval</li>
+  		<li>That you submitted the details correct to the best of your belief</li>
+  		<li>That you bear the responsibilty of the consequences if your submitted data is found false</li>
+  		<li>That you will not complain about the after effects of the donation which is described prior to the donation</li>
+  	</div>
+
+<button class="accordion">Ineligibility</button>
+<div class="panel">
+	<p style="font-weight: bolder;">If found with these conditions you will be considered ineligible for blood donation</p>
+		<ol>
+			<li>A donor with an acute infection should not donate. </li>
+			<li>Aspirin, no waiting period for donating whole blood. However, you must wait 2 full days after taking aspirin or any medication containing aspirin before donating platelets by apheresis. For example, if you take aspirin products on Monday, the soonest you may donate platelets is Thursday.</li>
+			<li><p style="font-weight:bold;">Blood Pressure:</p>
+			 <ol>
+			 	<li>Acceptable as long as you feel well when you come to donate, and your blood pressure is at least 90/50 (systolic/diastolic).</li>
+			 	<li>Acceptable as long as your blood pressure is below 180 systolic (first number) and below 100 diastolic (second number) at the time of donation. Medications for high blood pressure do not disqualify you from donating.</li>
+			 </ol>
+			<li>Eligibility depends on the type of cancer and treatment history. If you had leukemia or lymphoma, including Hodgkin’s Disease and other cancers of the blood, you are not eligible to donate. Other types of cancer are acceptable if the cancer has been treated successfully and it has been more than 12 months since treatment was completed and there has been no cancer recurrence in this time. Lower risk in-situ cancers including squamous or basal cell cancers of the skin that have been completely removed and healed do not require a 12-month waiting period.
+
+Precancerous conditions of the uterine cervix do not disqualify you from donation if the abnormality has been treated successfully. You should discuss your particular situation with the health historian at the time of donation.</li>
+			<li>Most chronic illnesses are acceptable as long as you feel well, the condition is under control, and you meet all other eligibility requirements.</li>
+			<li>Acceptable after dental procedures as long as there is no infection present. Wait until finishing antibiotics for a dental infection. Wait for 3 days after having oral surgery.</li>
+			<li>Diabetics who are well controlled on insulin or oral medications are eligible to donate.</li>	
+		</ol>
+</div>
+
+
+
+<p style="font-weight: bolder;">Donation Intervals</p>
+
+<h4>Wait at least 8 weeks between whole blood (standard) donations.
+
+<h4>Wait at least 7 days between platelet (pheresis) donations.
+
+<h4>Wait at least 16 weeks between Power Red (automated) donations.
+
+
+<!--Javascript code for accordion-->
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+  /*why ")" is placed */
+}
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+
+
+<!--This is for body of the social links--->
+
+
+
+<!--Another link  panel for social links-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div  id="footer">
+
+<div class="footer-social-icons">
+    <h4 class="_14">Follow us on</h4>
+    <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+    </ul>
+</div>
+</div>
+
+</body>
+</html>
